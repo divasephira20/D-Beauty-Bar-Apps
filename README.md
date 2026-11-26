@@ -4,7 +4,7 @@ Aplikasi mobile modern untuk layanan reservasi dan katalog perawatan kecantikan 
 
 ---
 
-## ✨ Fitur Utama
+## Fitur Utama
 
 - **Katalog Layanan Kecantikan:** Jelajahi berbagai kategori perawatan (seperti *Nail Art*, *Eyelash Extension*, *Facial*, *Hair Treatment*, dll.) lengkap dengan harga dan durasi pengerjaan.
 - **Reservasi Jadwal (*Booking*):** Pilih layanan, tanggal, dan jam kedatangan secara langsung melalui aplikasi.
@@ -14,7 +14,7 @@ Aplikasi mobile modern untuk layanan reservasi dan katalog perawatan kecantikan 
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 - **Framework:** [Flutter](https://flutter.dev/)
 - **Bahasa Pemrograman:** [Dart](https://dart.dev/)
@@ -23,7 +23,7 @@ Aplikasi mobile modern untuk layanan reservasi dan katalog perawatan kecantikan 
 
 ---
 
-## 📱 Tangkapan Layar (*Screenshots*)
+## *Screenshots*
 
 | Halaman Utama | Katalog Layanan | Lokasi |
 | :---: | :---: | :---: |
@@ -31,7 +31,7 @@ Aplikasi mobile modern untuk layanan reservasi dan katalog perawatan kecantikan 
 
 ---
 
-## 🚀 Cara Menjalankan Proyek secara Lokal
+## Cara Menjalankan Proyek secara Lokal
 
 Pastikan kamu sudah menginstal **Flutter SDK** di komputermu sebelum menjalankan proyek ini.
 
