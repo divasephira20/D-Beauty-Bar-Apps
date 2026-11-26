@@ -1,0 +1,213 @@
+<!DOCTYPE html><html class="h-full" lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "pastel-pink": "#FCECEE",
+        "pastel-pink-subtle": "#FFF4F5",
+        "pastel-green": "#EAF4EE",
+        "pastel-green-subtle": "#F2F9F4",
+        "pastel-yellow": "#FCF6E5",
+        "pastel-yellow-subtle": "#FEFAED",
+        "pastel-lavender": "#F4EEFB",
+        "charcoal": "#18181B",
+        "charcoal-muted": "#27272A",
+        "on-surface": "#18181B",
+        "on-surface-variant": "#71717A",
+        "surface": "#FAF8F5",
+        "surface-card": "#FFFFFF",
+        "outline-soft": "#ECEAE4",
+        "primary": "#18181B",
+        "on-primary": "#FFFFFF"
+      },
+      borderRadius: {
+        "2xl": "1.25rem",
+        "3xl": "1.75rem",
+        "4xl": "2.25rem",
+        "full": "9999px"
+      },
+      fontFamily: {
+        sans: ["Plus Jakarta Sans", "sans-serif"]
+      }
+    }
+  }
+};</script><style>
+@layer base {
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF8F5;
+  }
+  body {
+    overscroll-behavior: none;
+    -webkit-font-smoothing: antialiased;
+  }
+  .pb-safe {
+    padding-bottom: max(env(safe-area-inset-bottom, 0px), 16px);
+  }
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+</style>
+</head><body class="bg-[#FAF8F5] text-charcoal font-sans flex justify-center min-h-screen selection:bg-charcoal selection:text-white" style="background: linear-gradient(175deg, rgb(255, 240, 243) 0%, rgb(255, 248, 240) 30%, rgb(245, 251, 247) 70%, rgb(253, 251, 240) 100%) fixed;"><div class="w-full max-w-[430px] min-h-screen relative flex flex-col bg-[#FAF8F5] shadow-[0_0_50px_rgba(0,0,0,0.04)]" style="background: linear-gradient(175deg, rgb(255, 240, 243) 0%, rgb(255, 248, 240) 30%, rgb(245, 251, 247) 70%, rgb(253, 251, 240) 100%);"><!-- Header minimalis pastel glow -->
+<header class="sticky top-0 w-full z-40 bg-[#FAF8F5]/90 backdrop-blur-xl pt-safe" style="background-color: rgba(255, 248, 245, 0.85);"><div class="h-16 px-5 flex items-center justify-between"><div class="flex items-center gap-3"><a class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal shadow-sm border border-black/[0.04] active:scale-95 transition-transform" data-path="beranda" href="#"><span class="material-symbols-outlined text-[20px]">arrow_back</span></a><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2MSxW_ErBRGZLQQLKimrDVxJeEhcNBdFB1rNcLyFfLYW21mEccGtAz75ZQyxbBhcDPbhaddpotSO98_m2M4LJazvc_6ke72dZOPGa2X0t2Q8g-keib7dMrlHA_zcqINsihrCpQTA0Or-PAUcqVtl0QfWheEfiFTHo-1OoC3d1zZvZ8K3PzffwwpFzPNyGrjDgK2nfJaj5hYWoQ5dSxhsLu1Av6D-_J2HAS6vzv9lyIXUVAmhEaUsL" alt="D'Beauty Bar Logo" class="w-10 h-10 rounded-full object-cover shrink-0 border border-black/[0.05] shadow-sm"><div><h1 class="text-base font-bold text-charcoal leading-none tracking-tight">D'Beauty Bar Bandung</h1><p class="text-[11px] font-medium text-on-surface-variant mt-0.5">Katalog &amp; Perawatan</p></div></div><div class="flex items-center gap-2"><button aria-label="Notifikasi" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal shadow-sm border border-black/[0.04] relative hover:bg-stone-50 active:scale-95 transition-all"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-rose-400 ring-2 ring-white"></span></button><button aria-label="Wishlist" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal shadow-sm border border-black/[0.04] active:scale-95 transition-all"><span class="material-symbols-outlined text-[20px]">favorite</span></button></div></div></header><main class="flex flex-col relative w-full px-5 pt-2 pb-32 flex-1"><!-- Editorial Title Headline ala Referensi --><div class="mb-4 mt-1"><h2 class="text-[28px] font-extrabold text-charcoal leading-[1.18] tracking-tight">D'Beauty Bar<br>always for you</h2><p class="text-[13px] text-on-surface-variant mt-1.5 font-normal">Pilih treatment estetika favoritmu di Bandung</p></div><!-- Search Bar Minimalist Rounded-full --><div class="relative w-full mb-4"><span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-stone-400 text-[20px] pointer-events-none">search</span><input class="w-full h-12 pl-11 pr-10 rounded-full bg-white border border-stone-200/70 text-charcoal text-[13px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] focus:outline-none focus:border-charcoal focus:ring-0 transition-all placeholder:text-stone-400" id="serviceSearch" placeholder="Cari hair, lash, nail, facial..." type="text"><button class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-stone-100 text-stone-600 flex items-center justify-center text-xs" id="clearSearch"><span class="material-symbols-outlined text-[14px]">close</span></button></div><!-- Category Filter Pills Kapsul --><div class="flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth -mx-5 px-5 pb-3 mb-2" id="chipCarousel"><button class="category-chip active whitespace-nowrap px-4 py-2 rounded-full text-[13px] font-semibold flex items-center gap-1.5 transition-all bg-charcoal text-white shadow-sm" data-cat="all" style="background: linear-gradient(135deg, rgb(39, 39, 42) 0%, rgb(24, 24, 27) 100%); box-shadow: rgba(24, 24, 27, 0.2) 0px 4px 12px;">
+<span>Semua</span>
+</button><button class="category-chip whitespace-nowrap px-4 py-2 rounded-full text-[13px] font-semibold flex items-center gap-1.5 transition-all bg-white text-charcoal border border-stone-200/80 hover:bg-stone-50" data-cat="hair">
+<span>Hair</span>
+</button><button class="category-chip whitespace-nowrap px-4 py-2 rounded-full text-[13px] font-semibold flex items-center gap-1.5 transition-all bg-white text-charcoal border border-stone-200/80 hover:bg-stone-50" data-cat="nails">
+<span>Nails</span>
+</button><button class="category-chip whitespace-nowrap px-4 py-2 rounded-full text-[13px] font-semibold flex items-center gap-1.5 transition-all bg-white text-charcoal border border-stone-200/80 hover:bg-stone-50" data-cat="makeup">
+<span>Makeup</span>
+</button><button class="category-chip whitespace-nowrap px-4 py-2 rounded-full text-[13px] font-semibold flex items-center gap-1.5 transition-all bg-white text-charcoal border border-stone-200/80 hover:bg-stone-50" data-cat="facial">
+<span>Facial</span>
+</button><button class="category-chip whitespace-nowrap px-4 py-2 rounded-full text-[13px] font-semibold flex items-center gap-1.5 transition-all bg-white text-charcoal border border-stone-200/80 hover:bg-stone-50" data-cat="lash">
+<span>Lash</span>
+</button><button class="category-chip whitespace-nowrap px-4 py-2 rounded-full text-[13px] font-semibold flex items-center gap-1.5 transition-all bg-white text-charcoal border border-stone-200/80 hover:bg-stone-50" data-cat="waxing">
+<span>Waxing</span>
+</button></div><!-- Editorial Promo Banner Pastel Glow --><div class="relative overflow-hidden rounded-3xl bg-pastel-pink border border-rose-100 p-4 mb-5 flex items-center justify-between shadow-[0_4px_16px_rgba(252,236,238,0.7)]" style="background: linear-gradient(135deg, rgb(255, 240, 242) 0%, rgb(252, 228, 236) 50%, rgb(248, 225, 220) 100%);"><div class="flex flex-col pr-2"><div class="inline-flex items-center gap-1 text-[11px] font-bold text-charcoal uppercase tracking-wider mb-0.5"><span class="w-1.5 h-1.5 rounded-full bg-rose-400"></span>
+<span>Self-Care Sanctuary Pass</span></div><p class="text-[12px] text-stone-600 font-medium">Diskon 15% untuk kombinasi Hair &amp; Nail Art pilihan</p></div><button class="shrink-0 px-3 py-1.5 rounded-full bg-white text-charcoal text-[11px] font-bold shadow-sm border border-stone-100 flex items-center gap-1">
+Klaim <span class="material-symbols-outlined text-[14px]">arrow_forward</span></button></div><!-- 2-Column Pastel Card Grid ala Referensi Gambar --><div class="grid grid-cols-2 gap-3.5" id="treatmentCatalogList"><!-- Hair 1 (Blush Pink Card) --><article class="treatment-item group flex flex-col rounded-3xl bg-pastel-pink p-3 relative shadow-sm border border-rose-100/60 transition-transform active:scale-[0.98]" data-category="hair" style="background: linear-gradient(145deg, rgb(255, 241, 243) 0%, rgb(252, 236, 238) 60%, rgb(252, 228, 232) 100%); border-color: rgba(254, 205, 211, 0.7); box-shadow: rgba(252, 236, 238, 0.8) 0px 4px 20px;"><div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-white/70 mb-2.5 flex items-center justify-center"><img alt="Signature Blowdry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-nbsqoIEINmF9yBL2KbEdHmS6-KVgnhJyuuoyMbD5z2-qpxQdfnV13yQbggJWWR6fPTWyqx4-V4OynVGGt593wi50R8MqG0NC0L3GEIFhvf57cTZSAdCAo1IEX7cIhop9Xvv-OT7wDO2YEg-gNWO4W3AmGPGzuT_V8Suh2VlUMq7_SikknZzSG7y2ev6k4TM4VdNOzBjVTOrT8i8hT_r2jCmPLg1ZZE6inFTEFtI"><button aria-label="Favoritkan" class="fav-btn absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-charcoal shadow-sm active:scale-90 transition-transform"><span class="material-symbols-outlined text-[16px]">favorite_border</span></button><div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-semibold text-charcoal flex items-center gap-0.5"><span class="material-symbols-outlined text-[11px]">schedule</span> 45m
+    </div></div><div class="flex flex-col flex-1 justify-between"><div class="mb-2"><span class="text-[10px] font-bold tracking-wide uppercase text-rose-500/90">Hair Styling</span><h3 class="text-[13px] font-bold text-charcoal leading-snug treatment-title line-clamp-1 mt-0.5">Signature Blowdry</h3><p class="text-[11px] text-stone-500 line-clamp-1 mt-0.5">Hair wash rose water &amp; styling glamor.</p></div><div class="flex items-center justify-between pt-1 border-t border-black/[0.04] mt-auto"><div><span class="text-[9px] text-stone-400 block leading-tight">Mulai dari</span><span class="text-[13px] font-extrabold text-charcoal tracking-tight">Rp 135k</span></div><button class="select-service-btn w-8 h-8 rounded-full bg-charcoal text-white flex items-center justify-center hover:bg-stone-800 active:scale-90 transition-all shadow-sm" data-category="hair" data-price="135.000" data-title="Signature Blowdry"><span class="material-symbols-outlined text-[18px]">add</span></button></div></div></article><!-- Hair 2 (Butter Yellow Card) --><article class="treatment-item group flex flex-col rounded-3xl bg-pastel-yellow p-3 relative shadow-sm border border-amber-100/60 transition-transform active:scale-[0.98]" data-category="hair" style="background: linear-gradient(145deg, rgb(255, 253, 245) 0%, rgb(252, 246, 229) 60%, rgb(250, 239, 212) 100%); border-color: rgba(254, 243, 199, 0.8); box-shadow: rgba(252, 246, 229, 0.8) 0px 4px 20px;"><div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-white/70 mb-2.5 flex items-center justify-center"><img alt="Korean Glass Hair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKn6Za2qFbTm_FPFIZAHbHiFMoWXiKsbgU19I3tH6K0ksn46IjDjo4Bgua6LE4B8efKBWkUpwS-cAqr_grCWDYy1CQ4lag3xIysSjmCVoPXBN4qN7jI-YGc6O1byUS9BwmBWK4MXvEEmmRJDpGWNe79JsGIPBhSzEF0WclXIoNA4rq5HJWxgTp44p6boPG9jsyQLKq1Y05wXGcccWvy6la_evgLX_g5HbCdYH-mBE"><button aria-label="Favoritkan" class="fav-btn absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-charcoal shadow-sm active:scale-90 transition-transform"><span class="material-symbols-outlined text-[16px]">favorite_border</span></button><div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-semibold text-charcoal flex items-center gap-0.5"><span class="material-symbols-outlined text-[11px]">schedule</span> 90m
+    </div></div><div class="flex flex-col flex-1 justify-between"><div class="mb-2"><span class="text-[10px] font-bold tracking-wide uppercase text-amber-600/90">Hair Treatment</span><h3 class="text-[13px] font-bold text-charcoal leading-snug treatment-title line-clamp-1 mt-0.5">Korean Glass Hair</h3><p class="text-[11px] text-stone-500 line-clamp-1 mt-0.5">Keratin gloss kilau maksimal rambut halus.</p></div><div class="flex items-center justify-between pt-1 border-t border-black/[0.04] mt-auto"><div><span class="text-[9px] text-stone-400 block leading-tight">Mulai dari</span><span class="text-[13px] font-extrabold text-charcoal tracking-tight">Rp 380k</span></div><button class="select-service-btn w-8 h-8 rounded-full bg-charcoal text-white flex items-center justify-center hover:bg-stone-800 active:scale-90 transition-all shadow-sm" data-category="hair" data-price="380.000" data-title="Korean Glass Hair"><span class="material-symbols-outlined text-[18px]">add</span></button></div></div></article><!-- Nails 1 (Mint Green Card) --><article class="treatment-item group flex flex-col rounded-3xl bg-pastel-green p-3 relative shadow-sm border border-emerald-100/60 transition-transform active:scale-[0.98]" data-category="nails" style="background: linear-gradient(145deg, rgb(244, 250, 246) 0%, rgb(234, 244, 238) 60%, rgb(223, 240, 229) 100%); border-color: rgba(209, 250, 229, 0.8); box-shadow: rgba(234, 244, 238, 0.8) 0px 4px 20px;"><div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-white/70 mb-2.5 flex items-center justify-center"><img alt="Gel Polish Classic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkqJvyNXYmwU-cXrPn66YBHqvOXoMYx96fu18AE4Ss9hnYxnKNOEgVbFWIRXIiVTPidrhtfiTVblEQIKJAcQkD2tzpVX0cdyxt3jlEvmvYYwYE49HjoJctIXXL0FqPC_RsLWlyhvxCo7TS-Tgl7DeCroJHT1je-_ue3o4YH7djerJR62FLIbSt50FEzEAxsyaGgGQBtUVsxHO7_AP0GjhNbjqVnvdnB76Lgg6W3iY"><button aria-label="Favoritkan" class="fav-btn absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-charcoal shadow-sm active:scale-90 transition-transform"><span class="material-symbols-outlined text-[16px]">favorite_border</span></button><div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-semibold text-charcoal flex items-center gap-0.5"><span class="material-symbols-outlined text-[11px]">schedule</span> 60m
+    </div></div><div class="flex flex-col flex-1 justify-between"><div class="mb-2"><span class="text-[10px] font-bold tracking-wide uppercase text-emerald-600/90">Nail Art</span><h3 class="text-[13px] font-bold text-charcoal leading-snug treatment-title line-clamp-1 mt-0.5">Gel Polish Classic</h3><p class="text-[11px] text-stone-500 line-clamp-1 mt-0.5">Manicure bersih &amp; warna awet 4 minggu.</p></div><div class="flex items-center justify-between pt-1 border-t border-black/[0.04] mt-auto"><div><span class="text-[9px] text-stone-400 block leading-tight">Mulai dari</span><span class="text-[13px] font-extrabold text-charcoal tracking-tight">Rp 150k</span></div><button class="select-service-btn w-8 h-8 rounded-full bg-charcoal text-white flex items-center justify-center hover:bg-stone-800 active:scale-90 transition-all shadow-sm" data-category="nails" data-price="150.000" data-title="Gel Polish Classic"><span class="material-symbols-outlined text-[18px]">add</span></button></div></div></article><!-- Nails 2 (Blush Pink Card) --><article class="treatment-item group flex flex-col rounded-3xl bg-pastel-pink p-3 relative shadow-sm border border-rose-100/60 transition-transform active:scale-[0.98]" data-category="nails" style="background: linear-gradient(145deg, rgb(255, 240, 244) 0%, rgb(252, 236, 238) 55%, rgb(248, 221, 227) 100%); border-color: rgba(254, 205, 211, 0.7); box-shadow: rgba(252, 236, 238, 0.8) 0px 4px 20px;"><div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-white/70 mb-2.5 flex items-center justify-center"><img alt="Blush Velvet Nail Art" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZjLlwQ7tbl9JTe-71RiJ3DjDspdOY9XCzLdlPN8Osx9wdiZHODK4J5vpTjg6f0QFTqHXPvD4rPJAyyGBYxxkBjpKloyiUKcW8Hg9yebobBiLpvMvFIstfhKeXWMdW4f1ywyrFGoEgi9yM7BmI43J4z5T8uzhkXQP4NTo6HR6ce_ytnFjL_i8_lp8D8kzBiqn5CPimU99KqmAJm--mYJFDth7kAuYrJ83jQLdbf2I"><button aria-label="Favoritkan" class="fav-btn absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-charcoal shadow-sm active:scale-90 transition-transform"><span class="material-symbols-outlined text-[16px]">favorite_border</span></button><div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-semibold text-charcoal flex items-center gap-0.5"><span class="material-symbols-outlined text-[11px]">schedule</span> 90m
+    </div></div><div class="flex flex-col flex-1 justify-between"><div class="mb-2"><span class="text-[10px] font-bold tracking-wide uppercase text-rose-500/90">Trending Nail</span><h3 class="text-[13px] font-bold text-charcoal leading-snug treatment-title line-clamp-1 mt-0.5">Blush Velvet Nail Art</h3><p class="text-[11px] text-stone-500 line-clamp-1 mt-0.5">Gradasi nude blush shimmer &amp; foil aksen.</p></div><div class="flex items-center justify-between pt-1 border-t border-black/[0.04] mt-auto"><div><span class="text-[9px] text-stone-400 block leading-tight">Mulai dari</span><span class="text-[13px] font-extrabold text-charcoal tracking-tight">Rp 250k</span></div><button class="select-service-btn w-8 h-8 rounded-full bg-charcoal text-white flex items-center justify-center hover:bg-stone-800 active:scale-90 transition-all shadow-sm" data-category="nails" data-price="250.000" data-title="Blush Velvet Nail Art"><span class="material-symbols-outlined text-[18px]">add</span></button></div></div></article><!-- Makeup 1 (Butter Yellow Card) --><article class="treatment-item group flex flex-col rounded-3xl bg-pastel-yellow p-3 relative shadow-sm border border-amber-100/60 transition-transform active:scale-[0.98]" data-category="makeup" style="background: linear-gradient(145deg, rgb(255, 253, 245) 0%, rgb(252, 246, 229) 55%, rgb(250, 238, 210) 100%); border-color: rgba(254, 243, 199, 0.8); box-shadow: rgba(252, 246, 229, 0.8) 0px 4px 20px;"><div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-white/70 mb-2.5 flex items-center justify-center"><div class="w-full h-full flex items-center justify-center bg-white/60 text-amber-500"><span class="material-symbols-outlined text-[48px]">brush</span></div><button aria-label="Favoritkan" class="fav-btn absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-charcoal shadow-sm active:scale-90 transition-transform"><span class="material-symbols-outlined text-[16px]">favorite_border</span></button><div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-semibold text-charcoal flex items-center gap-0.5"><span class="material-symbols-outlined text-[11px]">schedule</span> 45m
+    </div></div><div class="flex flex-col flex-1 justify-between"><div class="mb-2"><span class="text-[10px] font-bold tracking-wide uppercase text-amber-600/90">Makeup Look</span><h3 class="text-[13px] font-bold text-charcoal leading-snug treatment-title line-clamp-1 mt-0.5">Natural Glow Daily</h3><p class="text-[11px] text-stone-500 line-clamp-1 mt-0.5">Riasan dewy natural tahan seharian.</p></div><div class="flex items-center justify-between pt-1 border-t border-black/[0.04] mt-auto"><div><span class="text-[9px] text-stone-400 block leading-tight">Mulai dari</span><span class="text-[13px] font-extrabold text-charcoal tracking-tight">Rp 220k</span></div><button class="select-service-btn w-8 h-8 rounded-full bg-charcoal text-white flex items-center justify-center hover:bg-stone-800 active:scale-90 transition-all shadow-sm" data-category="makeup" data-price="220.000" data-title="Natural Glow Daily Look"><span class="material-symbols-outlined text-[18px]">add</span></button></div></div></article><!-- Makeup 2 (Blush Pink Card) --><article class="treatment-item group flex flex-col rounded-3xl bg-pastel-pink p-3 relative shadow-sm border border-rose-100/60 transition-transform active:scale-[0.98]" data-category="makeup" style="background: linear-gradient(145deg, rgb(255, 240, 242) 0%, rgb(252, 236, 238) 60%, rgb(249, 224, 231) 100%); border-color: rgba(254, 205, 211, 0.7); box-shadow: rgba(252, 236, 238, 0.8) 0px 4px 20px;"><div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-white/70 mb-2.5 flex items-center justify-center"><div class="w-full h-full flex items-center justify-center bg-white/60 text-rose-400"><span class="material-symbols-outlined text-[48px]">auto_fix_high</span></div><button aria-label="Favoritkan" class="fav-btn absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-charcoal shadow-sm active:scale-90 transition-transform"><span class="material-symbols-outlined text-[16px]">favorite_border</span></button><div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-semibold text-charcoal flex items-center gap-0.5"><span class="material-symbols-outlined text-[11px]">schedule</span> 75m
+    </div></div><div class="flex flex-col flex-1 justify-between"><div class="mb-2"><span class="text-[10px] font-bold tracking-wide uppercase text-rose-500/90">Event &amp; Party</span><h3 class="text-[13px] font-bold text-charcoal leading-snug treatment-title line-clamp-1 mt-0.5">Glamour Event Makeup</h3><p class="text-[11px] text-stone-500 line-clamp-1 mt-0.5">HD makeup smokey &amp; bulu mata premium.</p></div><div class="flex items-center justify-between pt-1 border-t border-black/[0.04] mt-auto"><div><span class="text-[9px] text-stone-400 block leading-tight">Mulai dari</span><span class="text-[13px] font-extrabold text-charcoal tracking-tight">Rp 450k</span></div><button class="select-service-btn w-8 h-8 rounded-full bg-charcoal text-white flex items-center justify-center hover:bg-stone-800 active:scale-90 transition-all shadow-sm" data-category="makeup" data-price="450.000" data-title="Glamour Event Make-up"><span class="material-symbols-outlined text-[18px]">add</span></button></div></div></article><!-- Facial 1 (Mint Green Card) --><article class="treatment-item group flex flex-col rounded-3xl bg-pastel-green p-3 relative shadow-sm border border-emerald-100/60 transition-transform active:scale-[0.98]" data-category="facial" style="background: linear-gradient(145deg, rgb(244, 250, 246) 0%, rgb(234, 244, 238) 60%, rgb(222, 239, 228) 100%); border-color: rgba(209, 250, 229, 0.8); box-shadow: rgba(234, 244, 238, 0.8) 0px 4px 20px;"><div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-white/70 mb-2.5 flex items-center justify-center"><img alt="Rose Quartz Facial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcJGrs3A9EXi0Qkb7YTtExdjMZeEcygSkcEDcZjn2VwfB95siijh57FNMC_NXKBRRHoKs_yUG4oXJ3jzzGaNMRyK_HKWvUp6Z2J-gNd3L4wQqffjJFOsbJ_MzHRtJQqtAig-ve-XLU3wpZh0g-at2rQpgQe_xQ1hPv4AoeljxvzUkfPtUNV0AZtvPr9iGCuNaJw-4KM2PYryAZ879UvceoFgZ6cduz2sgrKyGhp48"><button aria-label="Favoritkan" class="fav-btn absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-charcoal shadow-sm active:scale-90 transition-transform"><span class="material-symbols-outlined text-[16px]">favorite_border</span></button><div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-semibold text-charcoal flex items-center gap-0.5"><span class="material-symbols-outlined text-[11px]">schedule</span> 60m
+    </div></div><div class="flex flex-col flex-1 justify-between"><div class="mb-2"><span class="text-[10px] font-bold tracking-wide uppercase text-emerald-600/90">Facial Spa</span><h3 class="text-[13px] font-bold text-charcoal leading-snug treatment-title line-clamp-1 mt-0.5">Rose Quartz Hydrating</h3><p class="text-[11px] text-stone-500 line-clamp-1 mt-0.5">Limfatik massage &amp; rose organic serum.</p></div><div class="flex items-center justify-between pt-1 border-t border-black/[0.04] mt-auto"><div><span class="text-[9px] text-stone-400 block leading-tight">Mulai dari</span><span class="text-[13px] font-extrabold text-charcoal tracking-tight">Rp 275k</span></div><button class="select-service-btn w-8 h-8 rounded-full bg-charcoal text-white flex items-center justify-center hover:bg-stone-800 active:scale-90 transition-all shadow-sm" data-category="facial" data-price="275.000" data-title="Rose Quartz Hydrating Facial"><span class="material-symbols-outlined text-[18px]">add</span></button></div></div></article><!-- Lash 1 (Blush Pink Card) --><article class="treatment-item group flex flex-col rounded-3xl bg-pastel-pink p-3 relative shadow-sm border border-rose-100/60 transition-transform active:scale-[0.98]" data-category="lash" style="background: linear-gradient(145deg, rgb(255, 242, 245) 0%, rgb(252, 236, 238) 60%, rgb(248, 222, 229) 100%); border-color: rgba(254, 205, 211, 0.7); box-shadow: rgba(252, 236, 238, 0.8) 0px 4px 20px;"><div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-white/70 mb-2.5 flex items-center justify-center"><div class="w-full h-full flex items-center justify-center bg-white/60 text-rose-400"><span class="material-symbols-outlined text-[48px]">visibility</span></div><button aria-label="Favoritkan" class="fav-btn absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-charcoal shadow-sm active:scale-90 transition-transform"><span class="material-symbols-outlined text-[16px]">favorite_border</span></button><div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-semibold text-charcoal flex items-center gap-0.5"><span class="material-symbols-outlined text-[11px]">schedule</span> 90m
+    </div></div><div class="flex flex-col flex-1 justify-between"><div class="mb-2"><span class="text-[10px] font-bold tracking-wide uppercase text-rose-500/90">Eyelash</span><h3 class="text-[13px] font-bold text-charcoal leading-snug treatment-title line-clamp-1 mt-0.5">Soft Volume Lash</h3><p class="text-[11px] text-stone-500 line-clamp-1 mt-0.5">Serat ultra lembut Jepang, ringan &amp; lentik.</p></div><div class="flex items-center justify-between pt-1 border-t border-black/[0.04] mt-auto"><div><span class="text-[9px] text-stone-400 block leading-tight">Mulai dari</span><span class="text-[13px] font-extrabold text-charcoal tracking-tight">Rp 320k</span></div><button class="select-service-btn w-8 h-8 rounded-full bg-charcoal text-white flex items-center justify-center hover:bg-stone-800 active:scale-90 transition-all shadow-sm" data-category="lash" data-price="320.000" data-title="Soft Volume Japanese Lash"><span class="material-symbols-outlined text-[18px]">add</span></button></div></div></article><!-- Waxing 1 (Butter Yellow Card) --><article class="treatment-item group flex flex-col rounded-3xl bg-pastel-yellow p-3 relative shadow-sm border border-amber-100/60 transition-transform active:scale-[0.98]" data-category="waxing" style="background: linear-gradient(145deg, rgb(255, 253, 246) 0%, rgb(252, 246, 229) 60%, rgb(250, 240, 214) 100%); border-color: rgba(254, 243, 199, 0.8); box-shadow: rgba(252, 246, 229, 0.8) 0px 4px 20px;"><div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-white/70 mb-2.5 flex items-center justify-center"><div class="w-full h-full flex items-center justify-center bg-white/60 text-amber-500"><span class="material-symbols-outlined text-[48px]">spa</span></div><button aria-label="Favoritkan" class="fav-btn absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-charcoal shadow-sm active:scale-90 transition-transform"><span class="material-symbols-outlined text-[16px]">favorite_border</span></button><div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-semibold text-charcoal flex items-center gap-0.5"><span class="material-symbols-outlined text-[11px]">schedule</span> 30m
+    </div></div><div class="flex flex-col flex-1 justify-between"><div class="mb-2"><span class="text-[10px] font-bold tracking-wide uppercase text-amber-600/90">Gentle Wax</span><h3 class="text-[13px] font-bold text-charcoal leading-snug treatment-title line-clamp-1 mt-0.5">Underarm Sugar Wax</h3><p class="text-[11px] text-stone-500 line-clamp-1 mt-0.5">Gula organik lembut &amp; lidah buaya dingin.</p></div><div class="flex items-center justify-between pt-1 border-t border-black/[0.04] mt-auto"><div><span class="text-[9px] text-stone-400 block leading-tight">Mulai dari</span><span class="text-[13px] font-extrabold text-charcoal tracking-tight">Rp 95k</span></div><button class="select-service-btn w-8 h-8 rounded-full bg-charcoal text-white flex items-center justify-center hover:bg-stone-800 active:scale-90 transition-all shadow-sm" data-category="waxing" data-price="95.000" data-title="Underarm Sugar Waxing Gentle"><span class="material-symbols-outlined text-[18px]">add</span></button></div></div></article></div><!-- Empty State for Search --><div class="hidden flex-col items-center justify-center py-16 px-4 text-center" id="noResultsState"><div class="w-14 h-14 rounded-full bg-stone-100 flex items-center justify-center text-stone-400 mb-3"><span class="material-symbols-outlined text-[28px]">search_off</span></div><h4 class="text-sm font-bold text-charcoal">Treatment Tidak Ditemukan</h4><p class="text-xs text-stone-500 max-w-xs mt-1">Coba gunakan nama treatment lain atau pilih kategori di atas.</p><button class="mt-4 px-4 py-2 rounded-full bg-charcoal text-white text-xs font-semibold" id="resetSearchBtn">
+        Tampilkan Semua Treatment
+      </button></div><!-- Interactive Bottom Toast Notification --><div class="fixed bottom-24 left-1/2 -translate-x-1/2 w-[90%] max-w-[390px] z-50 transition-all duration-300 transform translate-y-28 opacity-0 pointer-events-none" id="selectionToast"><div class="bg-charcoal text-white p-3.5 rounded-2xl shadow-xl flex items-center justify-between gap-3 border border-white/10"><div class="flex items-center gap-2.5 min-w-0"><div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-emerald-400 shrink-0"><span class="material-symbols-outlined text-[18px]">check</span></div><div class="flex flex-col truncate"><span class="text-[13px] font-semibold truncate text-white" id="toastServiceName">Layanan Dipilih</span><span class="text-[11px] text-stone-300 font-medium" id="toastServicePrice">Rp 0</span></div></div><a class="px-4 py-2 rounded-full bg-white text-charcoal text-xs font-bold shrink-0 flex items-center gap-1 active:scale-95 transition-transform" data-path="quick-booking" href="#"><span>Booking</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span></a></div></div></main><!-- Floating Pill Dock Navigation Bar (ala Referensi https://lh3.googleusercontent.com/aida-public/AB6AXuDPJK1ETEl5HfkUeGFwCpgmACEV0sg64ZmjIL7GWAW2wBx1oZptgB9sJWr5vpTkXVBihkondWU2lKLTlkTje2elXPi-S8rtVnmqvveSI-5UAFsYA19j-JmkaOd55iC5KiZzS0BhZRQq8eSox_Elg1hFMQgU3w7mruSYFPmMhKfKH8oAjjdobRrXetwckgYPzL44PHPPmVsfn_8y66d-lVoVyecq6VSWPcRYyzwTRBEGu3M57OnflIW3) --><nav class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-auto min-w-[260px]"><div class="bg-white/95 backdrop-blur-xl px-3 py-2 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.12)] border border-black/[0.05] flex items-center justify-between gap-5"><a class="w-10 h-10 rounded-full flex items-center justify-center text-stone-400 hover:text-charcoal transition-colors" data-path="beranda" href="#"><span class="material-symbols-outlined text-[22px]">home</span></a><a class="w-10 h-10 rounded-full flex items-center justify-center text-stone-400 hover:text-charcoal transition-colors" data-path="outlet" href="#"><span class="material-symbols-outlined text-[22px]">search</span></a><a aria-current="page" class="w-11 h-11 rounded-full bg-charcoal text-white flex items-center justify-center shadow-sm active:scale-95 transition-transform" data-path="layanan" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span></a><a class="w-10 h-10 rounded-full flex items-center justify-center text-stone-400 hover:text-charcoal transition-colors" data-path="booking-saya" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span></a></div></nav></div><script>
+  (function initCatalog() {
+    const searchInput = document.getElementById('serviceSearch');
+    const clearBtn = document.getElementById('clearSearch');
+    const chipButtons = document.querySelectorAll('.category-chip');
+    const treatmentItems = document.querySelectorAll('.treatment-item');
+    const emptyState = document.getElementById('noResultsState');
+    const resetSearchBtn = document.getElementById('resetSearchBtn');
+    
+    // Toast Notification Elements
+    const toast = document.getElementById('selectionToast');
+    const toastName = document.getElementById('toastServiceName');
+    const toastPrice = document.getElementById('toastServicePrice');
+    let toastTimeout = null;
+
+    let activeFilter = 'all';
+
+    function filterServices() {
+      const query = (searchInput.value || '').trim().toLowerCase();
+      let totalVisible = 0;
+
+      clearBtn.classList.toggle('hidden', query.length === 0);
+
+      treatmentItems.forEach(item => {
+        const catKey = item.getAttribute('data-category');
+        const matchesCategory = (activeFilter === 'all' || activeFilter === catKey);
+        
+        const title = item.querySelector('.treatment-title')?.textContent.toLowerCase() || '';
+        const desc = item.querySelector('p')?.textContent.toLowerCase() || '';
+        const matchesQuery = !query || title.includes(query) || desc.includes(query);
+
+        if (matchesCategory && matchesQuery) {
+          item.classList.remove('hidden');
+          item.classList.add('flex');
+          totalVisible++;
+        } else {
+          item.classList.add('hidden');
+          item.classList.remove('flex');
+        }
+      });
+
+      if (totalVisible === 0) {
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+      } else {
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+      }
+    }
+
+    // Category click handler
+    chipButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        chipButtons.forEach(b => {
+          b.classList.remove('bg-charcoal', 'text-white', 'shadow-sm');
+          b.classList.add('bg-white', 'text-charcoal', 'border', 'border-stone-200/80');
+        });
+        btn.classList.add('bg-charcoal', 'text-white', 'shadow-sm');
+        btn.classList.remove('bg-white', 'text-charcoal', 'border', 'border-stone-200/80');
+
+        activeFilter = btn.getAttribute('data-cat');
+        filterServices();
+      });
+    });
+
+    // Search input handlers
+    searchInput.addEventListener('input', filterServices);
+
+    clearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      filterServices();
+      searchInput.focus();
+    });
+
+    resetSearchBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      activeFilter = 'all';
+      chipButtons[0].click();
+    });
+
+    // Wishlist toggle
+    const favButtons = document.querySelectorAll('.fav-btn');
+    favButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const icon = btn.querySelector('.material-symbols-outlined');
+        if (icon.textContent === 'favorite_border') {
+          icon.textContent = 'favorite';
+          icon.classList.add('text-rose-500');
+        } else {
+          icon.textContent = 'favorite_border';
+          icon.classList.remove('text-rose-500');
+        }
+      });
+    });
+
+    // Pilih Layanan toast trigger
+    const selectButtons = document.querySelectorAll('.select-service-btn');
+    selectButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const title = btn.getAttribute('data-title');
+        const price = btn.getAttribute('data-price');
+
+        toastName.textContent = title;
+        toastPrice.textContent = 'Rp ' + price;
+
+        toast.classList.remove('translate-y-28', 'opacity-0', 'pointer-events-none');
+        toast.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+
+        if (toastTimeout) clearTimeout(toastTimeout);
+        toastTimeout = setTimeout(() => {
+          toast.classList.add('translate-y-28', 'opacity-0', 'pointer-events-none');
+          toast.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+        }, 3500);
+      });
+    });
+  })();
+</script>
+
+</body></html>

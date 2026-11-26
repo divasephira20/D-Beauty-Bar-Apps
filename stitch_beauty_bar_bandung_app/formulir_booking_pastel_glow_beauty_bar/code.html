@@ -1,0 +1,300 @@
+<!DOCTYPE html><html class="h-full" lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
+<meta content="mobile_stack" name="shell-type">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "pastel-bg": "#FCF9F7",
+            "pastel-pink": "#FDECEF",
+            "pastel-pink-light": "#FFF3F5",
+            "pastel-mint": "#EAF7EE",
+            "pastel-yellow": "#FEF8E7",
+            "charcoal": "#18181B",
+            "soft-text": "#1E1E24",
+            "muted-text": "#71717A"
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            '2xl': '1rem',
+            '3xl': '1.5rem',
+            '4xl': '2rem'
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    @layer base {
+      html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #FCF9F7;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+      .pb-safe {
+        padding-bottom: env(safe-area-inset-bottom, 20px);
+      }
+      .pt-safe {
+        padding-top: env(safe-area-inset-top, 20px);
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-[#FCF9F7] text-soft-text font-sans flex justify-center min-h-screen antialiased selection:bg-rose-200" style="background: linear-gradient(175deg, rgb(255, 240, 243) 0%, rgb(255, 248, 240) 30%, rgb(245, 251, 247) 70%, rgb(253, 251, 240) 100%) fixed;">
+<div class="w-full max-w-[430px] min-h-screen relative flex flex-col bg-[#FCF9F7] shadow-sm" style="background: transparent;">
+<!-- Top Header in Reference Style: Minimal Circular Back Button & Clean Title -->
+<header class="sticky top-0 w-full z-40 bg-[#FCF9F7]/90 backdrop-blur-md pt-safe px-5 pb-3" style="background-color: rgba(255, 240, 243, 0.75);">
+<div class="h-14 flex items-center justify-between">
+<button aria-label="Kembali" class="w-10 h-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-stone-100 flex items-center justify-center text-charcoal hover:bg-stone-50 active:scale-95 transition-all" onclick="history.back()">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<h1 class="text-base font-semibold text-charcoal tracking-tight">Booking Checkout</h1>
+<img alt="D'Beauty Bar" class="w-10 h-10 rounded-full object-cover border border-stone-100 shadow-[0_2px_8px_rgba(0,0,0,0.06)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2MSxW_ErBRGZLQQLKimrDVxJeEhcNBdFB1rNcLyFfLYW21mEccGtAz75ZQyxbBhcDPbhaddpotSO98_m2M4LJazvc_6ke72dZOPGa2X0t2Q8g-keib7dMrlHA_zcqINsihrCpQTA0Or-PAUcqVtl0QfWheEfiFTHo-1OoC3d1zZvZ8K3PzffwwpFzPNyGrjDgK2nfJaj5hYWoQ5dSxhsLu1Av6D-_J2HAS6vzv9lyIXUVAmhEaUsL">
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex flex-col relative w-full px-5 pt-2 pb-36 flex-1">
+<div class="flex flex-col w-full gap-5">
+<!-- Header Editorial Banner -->
+<div class="mt-1">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-pastel-pink text-[#9B4553] text-[11px] font-semibold tracking-wide uppercase mb-2" style="background: linear-gradient(135deg, rgb(253, 236, 239) 0%, rgb(254, 243, 238) 50%, rgb(254, 236, 229) 100%); border: 1px solid rgba(244, 63, 94, 0.15); box-shadow: rgba(155, 69, 83, 0.08) 0px 2px 10px;">
+<span class="material-symbols-outlined text-[14px]">spa</span>
+<span>Reservasi Cantik</span>
+</div>
+<h2 class="text-2xl font-bold tracking-tight text-charcoal leading-snug">Lengkapi Janji Temu</h2>
+<p class="text-xs text-muted-text mt-1 leading-relaxed">Sampurasun! Siapkan waktu manjakan diri Anda di D'Beauty Bar Bandung.</p>
+</div>
+<!-- GPS Indicator: Soft Pastel Mint Card -->
+<div class="p-4 rounded-3xl bg-[#EAF7EE] border border-emerald-100/60 shadow-sm flex items-start gap-3.5" style="background: linear-gradient(135deg, rgb(238, 249, 242) 0%, rgb(226, 245, 232) 60%, rgb(212, 239, 224) 100%); border: 1px solid rgba(16, 185, 129, 0.22); box-shadow: rgba(16, 185, 129, 0.07) 0px 4px 18px;">
+<div class="w-10 h-10 rounded-2xl bg-white/80 text-emerald-700 flex items-center justify-center shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">near_me</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="text-xs font-semibold text-emerald-950">Deteksi Lokasi Presisi</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-200/60 text-[10px] font-medium text-emerald-800">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                GPS Aktif
+              </span>
+</div>
+<p class="text-xs text-emerald-900/80 mt-1 leading-snug">
+              Jl. Dipati Ukur No. 35, Coblong, Kota Bandung
+            </p>
+<span class="text-[10px] text-emerald-700/70 mt-1 italic flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">info</span>
+              Koordinat GPS otomatis disimpan saat booking
+            </span>
+</div>
+</div>
+<!-- Form Fields Section -->
+<div class="flex flex-col gap-4">
+<!-- 1. Full Name: Pastel Pink Tinted Soft Container -->
+<div class="p-4 rounded-3xl bg-white border border-stone-100 shadow-[0_2px_12px_rgba(0,0,0,0.03)] flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<label class="text-xs font-semibold text-charcoal flex items-center gap-1" for="client-name">
+                Nama Lengkap
+                <span class="text-rose-500">*</span>
+</label>
+<span class="text-[11px] font-medium text-emerald-600 flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+                Valid
+              </span>
+</div>
+<div class="relative flex items-center">
+<div class="absolute left-3.5 flex items-center pointer-events-none text-stone-400">
+<span class="material-symbols-outlined text-[18px]">person</span>
+</div>
+<input class="w-full bg-[#FAF7F5] border-0 text-charcoal text-xs pl-10 pr-3 py-3 rounded-2xl focus:ring-2 focus:ring-rose-200 focus:bg-white transition-all font-medium placeholder:text-stone-400" id="client-name" name="client-name" placeholder="Contoh: Nadhira Putri" type="text" value="Nadhira Putri">
+</div>
+<span class="text-[10px] text-muted-text pl-1">Nama minimal 3 karakter</span>
+</div>
+<!-- 2. Service Selection: Clean Card with Icon & Detail -->
+<div class="p-4 rounded-3xl bg-white border border-stone-100 shadow-[0_2px_12px_rgba(0,0,0,0.03)] flex flex-col gap-2" style="background: linear-gradient(rgb(255, 255, 255) 0%, rgb(253, 251, 250) 100%); border: 1px solid rgba(228, 225, 230, 0.8); box-shadow: rgba(155, 69, 83, 0.04) 0px 4px 20px;">
+<label class="text-xs font-semibold text-charcoal flex items-center gap-1" for="service-select">
+              Pilihan Layanan
+              <span class="text-rose-500">*</span>
+</label>
+<div class="relative flex items-center">
+<div class="absolute left-3.5 flex items-center pointer-events-none text-[#9B4553]">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+<select class="w-full appearance-none bg-[#FAF7F5] border-0 text-charcoal text-xs font-semibold pl-10 pr-10 py-3 rounded-2xl focus:ring-2 focus:ring-rose-200 focus:bg-white transition-all truncate" id="service-select">
+<option selected="" value="blowdry">Signature Blowdry &amp; Style (Rp 135.000)</option>
+<option value="gel-nail">Gel Manicure &amp; Floral Art (Rp 180.000)</option>
+<option value="keratin">Smooth Keratin Infusion (Rp 320.000)</option>
+<option value="lash">Classic Volume Lash Extension (Rp 210.000)</option>
+</select>
+<div class="absolute right-3.5 flex items-center pointer-events-none text-stone-400">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-1 text-muted-text">
+<span class="material-symbols-outlined text-[13px] text-stone-400">schedule</span>
+<span class="text-[11px]">Estimasi durasi: 60 menit relaksasi total</span>
+</div>
+</div>
+<!-- 3. Branch Outlet: Soft Pastel Pink Hue Card -->
+<div class="p-4 rounded-3xl bg-[#FFF6F7] border border-rose-100/70 shadow-sm flex flex-col gap-2" style="background: linear-gradient(145deg, rgb(255, 246, 247) 0%, rgb(253, 242, 244) 50%, rgb(252, 237, 241) 100%); border: 1px solid rgba(251, 113, 133, 0.25); box-shadow: rgba(244, 63, 94, 0.06) 0px 4px 20px;">
+<label class="text-xs font-semibold text-charcoal flex items-center gap-1" for="branch-select">
+              Pilihan Cabang Outlet
+              <span class="text-rose-500">*</span>
+</label>
+<div class="relative flex items-center">
+<div class="absolute left-3.5 flex items-center pointer-events-none text-rose-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">storefront</span>
+</div>
+<select class="w-full appearance-none bg-white border border-rose-100 text-charcoal text-xs font-semibold pl-10 pr-10 py-3 rounded-2xl focus:ring-2 focus:ring-rose-200 transition-all truncate shadow-xs" id="branch-select"><option selected="" value="dago">D'Beauty Bar Dago (Terdekat • 850 m)</option><option value="riau">D'Beauty Bar LLRE Martadinata / Riau (2.4 km)</option><option value="buahn-batu">D'Beauty Bar Buah Batu Sanctuary (5.1 km)</option></select>
+<div class="absolute right-3.5 flex items-center pointer-events-none text-rose-400">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</div>
+</div>
+<div class="flex items-center gap-1 px-1 text-rose-700">
+<span class="material-symbols-outlined text-[13px]">verified</span>
+<span class="text-[11px] font-medium">Free welcome cold pressed juice &amp; artisan tea</span>
+</div>
+</div>
+<!-- 4. Schedule (Date & Time): Butter Yellow Pastel Card with Capsule Chips -->
+<div class="p-4 rounded-3xl bg-[#FEF9E8] border border-amber-100 shadow-sm flex flex-col gap-2.5" style="background: linear-gradient(145deg, rgb(255, 251, 240) 0%, rgb(254, 248, 231) 55%, rgb(250, 242, 220) 100%); border: 1px solid rgba(245, 158, 11, 0.22); box-shadow: rgba(217, 119, 6, 0.05) 0px 4px 18px;">
+<label class="text-xs font-semibold text-charcoal flex items-center gap-1">
+              Jadwal Kedatangan
+              <span class="text-rose-500">*</span>
+</label>
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Date Chip -->
+<button class="flex flex-col p-3 bg-white rounded-2xl border border-amber-100/70 shadow-xs hover:border-amber-300 active:scale-[0.98] transition-all text-left group" id="date-picker-btn" type="button">
+<div class="flex items-center gap-1 text-amber-700 mb-1">
+<span class="material-symbols-outlined text-[15px]">calendar_today</span>
+<span class="text-[10px] tracking-wider uppercase font-semibold text-muted-text">Tanggal</span>
+</div>
+<span class="text-xs font-bold text-charcoal group-hover:text-amber-900 transition-colors">25/06/2025</span>
+<span class="text-[10px] text-stone-500 mt-0.5">Rabu Manis</span>
+</button>
+<!-- Time Chip -->
+<button class="flex flex-col p-3 bg-white rounded-2xl border border-amber-100/70 shadow-xs hover:border-amber-300 active:scale-[0.98] transition-all text-left group" id="time-picker-btn" type="button">
+<div class="flex items-center gap-1 text-amber-700 mb-1">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+<span class="text-[10px] tracking-wider uppercase font-semibold text-muted-text">Jam</span>
+</div>
+<span class="text-xs font-bold text-charcoal group-hover:text-amber-900 transition-colors">14:30 WIB</span>
+<span class="text-[10px] text-emerald-600 font-medium mt-0.5">Terkonfirmasi</span>
+</button>
+</div>
+</div>
+<!-- Stylist Highlight Card: Rounded-3xl with Soft Rounded Chip -->
+<div class="p-4 rounded-3xl bg-white border border-stone-100 shadow-[0_2px_12px_rgba(0,0,0,0.03)] flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-12 h-12 rounded-2xl object-cover shadow-sm ring-2 ring-stone-100" data-alt="Close-up portrait of an elegant Indonesian female beauty stylist wearing a soft beige uniform with subtle floral hair accessory smiling gently in warm salon lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwmyWrcErmbKM5ffr2lyxHp6ml041f7yg10sMJ9Tmpr7x1ByxfqBlkgM9GZppr3msIWAPxotr_EntxICSXPHEqKiIAMHk4sv1PcCO4zN8zj6is7VvHl_ZzYXtToSIYsqumaE5LS0T679lTtIp06j82lWXMaqZUoHIWCOAJrlSbW5SQANOSxnfgWzQW8fwZtROHaOTS1DqxI3VZLqIiFpSZfU5Y5eWAnILpK6RJfK4">
+<div class="absolute -bottom-1 -right-1 w-4 h-4 bg-charcoal rounded-full flex items-center justify-center text-white shadow-xs">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] uppercase font-semibold tracking-wider text-muted-text">Stylist Terpilih</span>
+<span class="text-xs font-bold text-charcoal">Teh Kinanti A.</span>
+<span class="text-[11px] text-[#9B4553] font-medium">Senior Hair Specialist</span>
+</div>
+</div>
+<button class="px-3.5 py-1.5 rounded-full bg-[#FAF7F5] border border-stone-200/80 text-charcoal text-[11px] font-semibold hover:bg-stone-100 active:scale-95 transition-all shadow-2xs" type="button">
+              Ubah
+            </button>
+</div>
+<!-- 5. Additional Notes Multiline Input -->
+<div class="p-4 rounded-3xl bg-white border border-stone-100 shadow-[0_2px_12px_rgba(0,0,0,0.03)] flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="text-xs font-semibold text-charcoal flex items-center gap-1" for="booking-notes">
+                Catatan Tambahan
+                <span class="text-[11px] text-muted-text font-normal">(Opsional)</span>
+</label>
+<span class="text-[10px] text-stone-400">Maks. 200 karakter</span>
+</div>
+<div class="relative">
+<div class="absolute top-3 left-3.5 flex items-center pointer-events-none text-stone-400">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</div>
+<textarea class="w-full bg-[#FAF7F5] border-0 text-charcoal text-xs pl-10 pr-3 py-2.5 rounded-2xl focus:ring-2 focus:ring-rose-200 focus:bg-white transition-all resize-none placeholder:text-stone-400" id="booking-notes" placeholder="Misal: request nail art glitter tambahan, atau alergi alkohol..." rows="3"></textarea>
+</div>
+</div>
+<!-- Salon Promise Guarantee Tag -->
+<div class="p-3.5 rounded-2xl bg-white/60 border border-stone-200/60 flex items-center gap-2.5 text-muted-text">
+<span class="material-symbols-outlined text-charcoal text-[18px]">verified_user</span>
+<p class="text-[11px] leading-snug">
+              Reservasi dilindungi garansi tepat waktu. Bebas pembatalan hingga 2 jam sebelum sesi.
+            </p>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Checkout Card in Style of Reference (Proceed to checkout) -->
+<div class="fixed bottom-0 left-0 right-0 z-40 flex justify-center px-4 pb-safe bg-gradient-to-t from-[#FCF9F7] via-[#FCF9F7]/95 to-transparent pt-3 pointer-events-none" style="background: linear-gradient(to top, rgba(253, 251, 240, 0.98) 0%, rgba(253, 251, 240, 0.85) 60%, rgba(253, 251, 240, 0) 100%);">
+<div class="w-full max-w-[430px] p-4 flex flex-col gap-3 pointer-events-auto bg-white/90 backdrop-blur-xl rounded-4xl border border-stone-100 shadow-[0_8px_30px_rgba(0,0,0,0.08)] mb-2">
+<!-- Pricing Row: Clean Minimal Editorial Numbers -->
+<div class="flex items-center justify-between px-1" style="background: linear-gradient(135deg, rgb(253, 236, 239) 0%, rgb(254, 243, 238) 50%, rgb(254, 236, 229) 100%); border: 1px solid rgba(244, 63, 94, 0.15); box-shadow: rgba(155, 69, 83, 0.08) 0px 2px 10px;">
+<div>
+<span class="text-[10px] uppercase font-semibold text-muted-text tracking-wider">Total Estimasi</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="text-xl font-bold tracking-tight text-charcoal">Rp 135.000</span>
+<span class="text-[10px] text-stone-400 font-medium">Nett</span>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
+<span class="material-symbols-outlined text-[13px]">lock</span>
+                Bayar di Salon
+              </span>
+<p class="text-[10px] text-muted-text mt-0.5">Tunai / QRIS / Kartu</p>
+</div>
+</div>
+<!-- Charcoal Floating Pill Full-Width CTA (Inspired by "Proceed to checkout" pill in reference image) -->
+<button class="w-full h-13 py-3.5 bg-[#18181B] hover:bg-black active:scale-[0.98] text-white rounded-full font-semibold text-xs tracking-wide flex items-center justify-center gap-2 shadow-[0_4px_16px_rgba(24,24,27,0.25)] transition-all cursor-pointer" id="btn-confirm-booking" type="button" style="background: linear-gradient(135deg, rgb(28, 25, 23) 0%, rgb(42, 23, 32) 50%, rgb(24, 24, 27) 100%); box-shadow: rgba(42, 23, 32, 0.35) 0px 8px 24px, rgba(255, 255, 255, 0.12) 0px 1px 0px inset;">
+<span>Konfirmasi &amp; Buat Booking</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Success Modal -->
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm hidden items-center justify-center p-6" id="booking-modal">
+<div class="bg-white p-6 rounded-3xl max-w-xs w-full shadow-2xl flex flex-col items-center text-center animate-fade-in border border-stone-100">
+<div class="w-14 h-14 rounded-full bg-[#EAF7EE] text-emerald-700 flex items-center justify-center mb-3" style="background: linear-gradient(135deg, #EEF9F2 0%, #E2F5E8 60%, #D4EFE0 100%); border: 1px solid rgba(16, 185, 129, 0.22); box-shadow: 0 4px 18px rgba(16, 185, 129, 0.07);">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h3 class="text-base font-bold text-charcoal">Janji Temu Berhasil!</h3>
+<p class="text-xs text-muted-text mt-1.5 mb-5 leading-relaxed">Kami menantikan kehadiran Nadhira di D'Beauty Bar Dago. Notifikasi konfirmasi terkirim via WhatsApp.</p>
+<button class="w-full py-3 bg-[#18181B] text-white rounded-full text-xs font-semibold active:scale-95 transition-transform" onclick="document.getElementById('booking-modal').classList.add('hidden')" type="button">
+            Lihat Detail Booking
+          </button>
+</div>
+</div>
+</main>
+</div>
+<script>
+    (function() {
+      const confirmBtn = document.getElementById('btn-confirm-booking');
+      const modal = document.getElementById('booking-modal');
+      if (confirmBtn && modal) {
+        confirmBtn.addEventListener('click', function() {
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        });
+      }
+    })();
+  </script>
+
+
+</body></html>

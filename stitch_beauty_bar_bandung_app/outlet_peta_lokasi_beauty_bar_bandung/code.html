@@ -1,0 +1,517 @@
+<!DOCTYPE html><html class="h-full" lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "pastel-pink": "#FDEAEB",
+        "pastel-pink-subtle": "#FFF5F6",
+        "pastel-green": "#E8F5EE",
+        "pastel-green-subtle": "#F2FAF5",
+        "pastel-yellow": "#FEF8E7",
+        "pastel-yellow-subtle": "#FFFDF5",
+        "charcoal": "#18181B",
+        "charcoal-soft": "#27272A",
+        "surface": "#FAF8F5",
+        "surface-container": "#F4F1EA",
+        "on-surface": "#18181B",
+        "on-surface-variant": "#52525B",
+        "outline-soft": "#E4E4E7"
+      },
+      borderRadius: {
+        "2xl": "1.25rem",
+        "3xl": "1.75rem",
+        "4xl": "2.25rem",
+        "full": "9999px"
+      },
+      fontFamily: {
+        "sans": ["Plus Jakarta Sans", "sans-serif"]
+      }
+    }
+  }
+};</script><style>
+    @layer base {
+      html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #F8F5F2;
+      }
+      body {
+        overscroll-behavior: none;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      .pb-safe {
+        padding-bottom: env(safe-area-inset-bottom, 12px);
+      }
+      .pt-safe {
+        padding-top: env(safe-area-inset-top, 0px);
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style></head><body class="bg-[#F8F5F2] text-[#18181B] flex justify-center min-h-screen selection:bg-rose-100 selection:text-neutral-900" style="background: linear-gradient(175deg, rgb(255, 240, 243) 0%, rgb(255, 248, 240) 30%, rgb(245, 251, 247) 70%, rgb(253, 251, 240) 100%); min-height: 100vh;"><div class="w-full max-w-[430px] min-h-screen relative flex flex-col shadow-[0_0_50px_rgba(0,0,0,0.06)]" style="background: linear-gradient(175deg, #FFF0F3 0%, #FFF8F0 30%, #F5FBF7 70%, #FDFBF0 100%);"><!-- Soft Glow Top Header -->
+<header class="fixed top-0 w-full max-w-[430px] z-50 bg-[#F8F5F2]/80 backdrop-blur-xl pt-safe border-b border-black/[0.03]" style="background-color: rgba(255, 245, 247, 0.75);"><div class="h-16 px-5 flex items-center justify-between"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-[0_2px_8px_rgba(0,0,0,0.04)]"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdqmQyDvgvtaixySPjosAZpqru3-Vex0QKUs7cJZsr5MJ3hi2mdZwSKsfI_1dnkaTIO4hp9OgC11sDAsrO4B9ZDsojJz0_uOeOfcr7Yiv6FBD6g4KLwwBvKjTv4DqbysHOiTUGiqJGkwmv9cwMNYwVugrHn8jOgdCL5hY0AZo5IWwy6AO73kV09wy9u3K2yunHIWCFwGkD06CmRnR-m00qs0LUHE11Q-W4Tx0v1Ryw5ngNVNuvnBfL" alt="D'Beauty Bar Logo" class="w-10 h-10 rounded-full object-cover"></div><div class="flex flex-col"><span class="text-[17px] font-bold tracking-tight text-neutral-900 leading-none">D'Beauty Bar</span><span class="text-[11px] font-semibold text-neutral-500 tracking-wider uppercase mt-1">D'Beauty Bar Bandung • Outlet &amp; Peta</span></div></div><div class="flex items-center gap-2"><button aria-label="Notifikasi" class="w-10 h-10 flex items-center justify-center rounded-full bg-white text-neutral-700 shadow-sm hover:scale-105 active:scale-95 transition-all relative"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-[#E05263] ring-2 ring-white"></span></button><div class="p-0.5 rounded-full ring-2 ring-white shadow-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAD_Roq9mSboGRHbqluUO8NHr3zC9ekMk1qSEIBROekKbu3PSK8IMnlys3qXEuQJFmINAL-ehvZutBLdI_2NwQ-PSHU2lqT2aghdoyBa0GH6yBRT69ruG-p3XQo8KK6feEIe62WRFevQA_qNJ3Pg0OyuoJo384cDt1UbmJtmd4tvHEHNcJrShnw5rg6l2XqYfwljlIRiAy5G55MH8kpC8C8MNCsIo7qOZy339d1x8"></div></div></div></header><main class="flex flex-col relative w-full px-5 pt-20 pb-36 flex-1"><div class="flex flex-col w-full">
+<!-- Pastel Location Card -->
+<div class="flex flex-col gap-3 mb-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="text-[12px] font-bold text-neutral-500 tracking-wider uppercase">Lokasi Kamu Saat Ini</span>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white text-neutral-800 text-[12px] font-bold shadow-sm active:scale-95 transition-all" id="refreshGpsBtn">
+<span class="material-symbols-outlined text-[15px] text-neutral-700 transition-transform duration-700" id="refreshIcon">my_location</span>
+<span>Perbarui</span>
+</button>
+</div>
+<!-- User Current GPS Address Banner (Clean White Pill Card) -->
+<div class="flex items-center gap-3.5 p-3.5 bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-black/[0.02]" style="background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(255, 248, 246) 50%, rgb(245, 251, 247) 100%);">
+<div class="w-11 h-11 rounded-2xl bg-[#FDEAEB] flex items-center justify-center flex-shrink-0 text-[#DE4B60]">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="text-[15px] font-bold text-neutral-900 truncate">Coblong, Kota Bandung</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-[#E8F5EE] text-[#2B7A51] text-[10px] font-bold">±10m</span>
+</div>
+<p class="text-[12px] text-neutral-500 truncate mt-0.5">Jl. Dipati Ukur No. 35, Coblong, Kota Bandung</p>
+</div>
+</div>
+</div>
+<!-- Interactive Map Canvas Frame (Smooth Rounded-3xl Pastel Glow Frame) -->
+<div class="relative w-full h-[280px] rounded-3xl overflow-hidden bg-white shadow-[0_8px_30px_rgba(0,0,0,0.04)] mb-6 select-none border border-black/[0.02]">
+<!-- Stylized Map SVG Backdrop (Bandung Aesthetic Roads & Pastel Parks) -->
+<svg class="absolute inset-0 w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+<!-- Pastel Canvas Base -->
+<path d="M0,0 H400 V280 H0 Z" fill="#FDFBF9"></path>
+<!-- Soft Pastel Green Parks & Soft Rose Waterway -->
+<path d="M110,0 C130,45 175,65 165,115 C155,165 195,195 215,280 L265,280 C245,215 210,185 220,130 C230,75 190,45 170,0 Z" fill="#EBF6F0" opacity="0.9"></path>
+<circle cx="60" cy="180" fill="#FDEAEB" opacity="0.75" r="45"></circle>
+<circle cx="340" cy="50" fill="#FEF8E7" opacity="0.8" r="40"></circle>
+<!-- Main Arterials (Clean White Strokes with Soft Gray Shadow Base) -->
+<path d="M0,135 C120,140 240,130 400,145" stroke="#EDE8E3" stroke-linecap="round" stroke-width="12"></path>
+<path d="M0,135 C120,140 240,130 400,145" stroke="#FFFFFF" stroke-linecap="round" stroke-width="8"></path>
+<!-- Dago Spine -->
+<path d="M210,0 L200,280" stroke="#EDE8E3" stroke-width="10"></path>
+<path d="M210,0 L200,280" stroke="#FFFFFF" stroke-width="6"></path>
+<!-- Setiabudi Diagonal Spine -->
+<path d="M90,0 L180,140" stroke="#EDE8E3" stroke-width="8"></path>
+<path d="M90,0 L180,140" stroke="#FFFFFF" stroke-width="5"></path>
+<!-- Secondary Street Grid -->
+<path d="M50,60 L350,80" stroke="#FFFFFF" stroke-dasharray="6,4" stroke-width="3.5"></path>
+<path d="M70,200 L370,210" stroke="#FFFFFF" stroke-width="4"></path>
+<path d="M200,140 L340,280" stroke="#FFFFFF" stroke-width="4.5"></path>
+<!-- Landmark Labels -->
+<text fill="#A1A1AA" font-family="Plus Jakarta Sans" font-size="9" font-weight="700" letter-spacing="0.5" x="220" y="24">DAGO</text>
+<text fill="#A1A1AA" font-family="Plus Jakarta Sans" font-size="8" font-weight="700" letter-spacing="0.5" x="135" y="125">PASUPATI</text>
+<text fill="#A1A1AA" font-family="Plus Jakarta Sans" font-size="8" font-weight="700" letter-spacing="0.5" x="225" y="165">GEDUNG SATE</text>
+<text fill="#A1A1AA" font-family="Plus Jakarta Sans" font-size="8" font-weight="700" letter-spacing="0.5" x="95" y="235">BRAGA</text>
+<text fill="#A1A1AA" font-family="Plus Jakarta Sans" font-size="8" font-weight="700" letter-spacing="0.5" x="235" y="255">BUAH BATU</text>
+</svg>
+<!-- Subtle Glow Vignette -->
+<div class="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent pointer-events-none"></div>
+<!-- User Current GPS Position (Pastel Glow Dot) -->
+<div class="absolute left-[47%] top-[34%] -translate-x-1/2 -translate-y-1/2 z-30 cursor-pointer group transition-all duration-500" id="userMarker">
+<div class="relative flex items-center justify-center">
+<span class="animate-ping absolute inline-flex h-9 w-9 rounded-full bg-blue-400 opacity-40"></span>
+<div class="w-7 h-7 rounded-full bg-[#18181B] shadow-[0_4px_12px_rgba(0,0,0,0.25)] flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">person_pin</span>
+</div>
+</div>
+<div class="absolute -top-7 left-1/2 -translate-x-1/2 bg-[#18181B] text-white font-bold text-[9px] px-2 py-0.5 rounded-full whitespace-nowrap shadow-md">
+        Kamu Di Sini
+      </div>
+</div>
+<!-- Outlet Markers with Pastel Pink, Mint, Butter Yellow Pills -->
+<!-- 1. Dago Outlet (Pastel Blush Pink) -->
+<button aria-label="Outlet Dago" class="outlet-pin absolute left-[56%] top-[25%] -translate-x-1/2 -translate-y-1/2 z-20 group transition-all duration-300 active:scale-95" id="pin-dago" onclick="focusOutlet('dago')">
+<div class="flex flex-col items-center">
+<span class="px-2 py-0.5 rounded-full bg-white text-[#DE4B60] font-bold text-[9px] shadow-[0_2px_8px_rgba(0,0,0,0.08)] whitespace-nowrap mb-1 border border-[#FDEAEB]">1 • Dago</span>
+<div class="w-8 h-8 rounded-full bg-[#FDEAEB] border-2 border-white shadow-[0_4px_14px_rgba(222,75,96,0.35)] flex items-center justify-center text-[#DE4B60] font-extrabold text-[12px]">
+          1
+        </div>
+</div>
+</button>
+<!-- 2. Riau Outlet (Pastel Mint Green) -->
+<button aria-label="Outlet Riau" class="outlet-pin absolute left-[65%] top-[54%] -translate-x-1/2 -translate-y-1/2 z-20 group transition-all duration-300 active:scale-95" id="pin-riau" onclick="focusOutlet('riau')">
+<div class="flex flex-col items-center">
+<span class="px-2 py-0.5 rounded-full bg-white text-[#2B7A51] font-bold text-[9px] shadow-[0_2px_8px_rgba(0,0,0,0.08)] whitespace-nowrap mb-1 border border-[#E8F5EE]">2 • Riau</span>
+<div class="w-8 h-8 rounded-full bg-[#E8F5EE] border-2 border-white shadow-[0_4px_14px_rgba(43,122,81,0.25)] flex items-center justify-center text-[#2B7A51] font-extrabold text-[12px]">
+          2
+        </div>
+</div>
+</button>
+<!-- 3. Braga Outlet (Pastel Butter Yellow) -->
+<button aria-label="Outlet Braga" class="outlet-pin absolute left-[35%] top-[68%] -translate-x-1/2 -translate-y-1/2 z-20 group transition-all duration-300 active:scale-95" id="pin-braga" onclick="focusOutlet('braga')">
+<div class="flex flex-col items-center">
+<span class="px-2 py-0.5 rounded-full bg-white text-[#966C0F] font-bold text-[9px] shadow-[0_2px_8px_rgba(0,0,0,0.08)] whitespace-nowrap mb-1 border border-[#FEF8E7]">3 • Braga</span>
+<div class="w-8 h-8 rounded-full bg-[#FEF8E7] border-2 border-white shadow-[0_4px_14px_rgba(150,108,15,0.25)] flex items-center justify-center text-[#966C0F] font-extrabold text-[12px]">
+          3
+        </div>
+</div>
+</button>
+<!-- 4. Setiabudi Outlet (Pastel Blush Pink) -->
+<button aria-label="Outlet Setiabudi" class="outlet-pin absolute left-[25%] top-[19%] -translate-x-1/2 -translate-y-1/2 z-20 group transition-all duration-300 active:scale-95" id="pin-setiabudi" onclick="focusOutlet('setiabudi')">
+<div class="flex flex-col items-center">
+<span class="px-2 py-0.5 rounded-full bg-white text-[#DE4B60] font-bold text-[9px] shadow-[0_2px_8px_rgba(0,0,0,0.08)] whitespace-nowrap mb-1 border border-[#FDEAEB]">4 • Setiabudi</span>
+<div class="w-8 h-8 rounded-full bg-[#FDEAEB] border-2 border-white shadow-[0_4px_14px_rgba(222,75,96,0.25)] flex items-center justify-center text-[#DE4B60] font-extrabold text-[12px]">
+          4
+        </div>
+</div>
+</button>
+<!-- 5. Buah Batu Outlet (Pastel Mint Green) -->
+<button aria-label="Outlet Buah Batu" class="outlet-pin absolute left-[78%] top-[82%] -translate-x-1/2 -translate-y-1/2 z-20 group transition-all duration-300 active:scale-95" id="pin-buahbatu" onclick="focusOutlet('buahbatu')">
+<div class="flex flex-col items-center">
+<span class="px-2 py-0.5 rounded-full bg-white text-[#2B7A51] font-bold text-[9px] shadow-[0_2px_8px_rgba(0,0,0,0.08)] whitespace-nowrap mb-1 border border-[#E8F5EE]">5 • Buah Batu</span>
+<div class="w-8 h-8 rounded-full bg-[#E8F5EE] border-2 border-white shadow-[0_4px_14px_rgba(43,122,81,0.25)] flex items-center justify-center text-[#2B7A51] font-extrabold text-[12px]">
+          5
+        </div>
+</div>
+</button>
+<!-- Map Zoom & Center Controls (Clean White Pills) -->
+<div class="absolute right-3.5 top-3.5 flex flex-col gap-1.5 z-20">
+<button aria-label="Perbesar Peta" class="w-8 h-8 rounded-full bg-white text-neutral-800 shadow-[0_2px_8px_rgba(0,0,0,0.08)] flex items-center justify-center active:scale-90 transition-transform" onclick="zoomMap(1.1)">
+<span class="material-symbols-outlined text-[17px]">add</span>
+</button>
+<button aria-label="Perkecil Peta" class="w-8 h-8 rounded-full bg-white text-neutral-800 shadow-[0_2px_8px_rgba(0,0,0,0.08)] flex items-center justify-center active:scale-90 transition-transform" onclick="zoomMap(0.9)">
+<span class="material-symbols-outlined text-[17px]">remove</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-white text-neutral-900 shadow-[0_2px_8px_rgba(0,0,0,0.08)] flex items-center justify-center active:scale-90 transition-transform" onclick="recenterUser()" title="Pusatkan Posisi">
+<span class="material-symbols-outlined text-[17px]">near_me</span>
+</button>
+</div>
+<!-- Tile Attribution -->
+<div class="absolute left-3 bottom-2.5 z-10 flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-medium text-neutral-500 shadow-sm">
+<span class="material-symbols-outlined text-[12px]">map</span>
+<span>Bandung City Center</span>
+</div>
+</div>
+<!-- Header: Outlet Terdekat -->
+<div class="flex items-center justify-between mb-3 px-1">
+<div class="flex items-center gap-2">
+<h2 class="text-[19px] font-extrabold tracking-tight text-neutral-900">Outlet Terdekat</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-[#18181B] text-white text-[11px] font-bold">5 Cabang</span>
+</div>
+<div class="flex items-center gap-1 text-neutral-500">
+<span class="material-symbols-outlined text-[14px]">straighten</span>
+<span class="text-[11px] font-semibold">Jarak Akurat</span>
+</div>
+</div>
+<!-- 5 Outlet Cards with Alternating Pastel Glow Backgrounds -->
+<div class="flex flex-col gap-3.5" id="outletsList">
+<!-- CARD 1: Dago (Pastel Blush Pink) -->
+<div class="outlet-card flex flex-col p-5 bg-[#FDEAEB] rounded-3xl transition-all duration-300 shadow-[0_4px_20px_rgba(253,234,235,0.7)] border border-rose-100/60" id="card-dago" style="background: linear-gradient(145deg, rgb(253, 234, 235) 0%, rgb(255, 240, 242) 45%, rgb(254, 248, 231) 100%); box-shadow: rgba(222, 75, 96, 0.16) 0px 8px 24px -4px;">
+<div class="flex items-start justify-between gap-3 mb-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-2xl bg-white text-[#DE4B60] flex items-center justify-center font-extrabold text-[16px] flex-shrink-0 shadow-sm">
+            1
+          </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="text-[16px] font-bold text-neutral-900 truncate">D'Beauty Bar Dago</h3>
+<span class="px-2 py-0.5 rounded-full bg-white text-[#DE4B60] text-[10px] font-bold shadow-xs">Terdekat</span>
+</div>
+<p class="text-[12px] text-neutral-600 truncate mt-0.5">Jl. Ir. H. Juanda No. 112, Dago</p>
+</div>
+</div>
+<!-- White Pill Distance Badge -->
+<div class="flex items-center gap-1 px-3 py-1 rounded-full bg-white text-neutral-900 text-[12px] font-extrabold shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[13px] text-[#DE4B60]">directions_walk</span>
+<span>850 m</span>
+</div>
+</div>
+<!-- Meta info in translucent pill container -->
+<div class="flex items-center gap-4 py-2 px-3.5 bg-white/70 backdrop-blur-sm rounded-2xl mb-4 text-[12px] text-neutral-700 font-medium">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-[#DE4B60]">schedule</span>
+<span>09:00 - 20:00 WIB</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-neutral-300"></div>
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[15px] text-[#DE4B60]">call</span>
+<span>022-2501234</span>
+</div>
+</div>
+<!-- Pill Actions -->
+<div class="flex items-center gap-2">
+<button class="flex-1 h-11 flex items-center justify-center gap-1.5 rounded-full bg-white text-neutral-900 font-bold text-[13px] shadow-sm hover:bg-neutral-50 active:scale-95 transition-all" onclick="focusOutlet('dago')">
+<span class="material-symbols-outlined text-[16px]">explore</span>
+<span>Fokus Peta</span>
+</button>
+<a aria-label="Telepon Salon" class="w-11 h-11 flex items-center justify-center rounded-full bg-white text-neutral-800 shadow-sm hover:bg-neutral-50 active:scale-95 transition-all" href="tel:0222501234">
+<span class="material-symbols-outlined text-[17px]">call</span>
+</a>
+<button class="flex-1 h-11 flex items-center justify-center gap-1 rounded-full bg-[#18181B] text-white font-bold text-[13px] shadow-[0_4px_12px_rgba(24,24,27,0.2)] hover:bg-neutral-800 active:scale-95 transition-all" onclick="selectOutlet('Beauty Bar Dago')">
+<span>Pilih Cabang</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- CARD 2: Riau Aesthetic (Pastel Sage/Matcha Green) -->
+<div class="outlet-card flex flex-col p-5 bg-[#E8F5EE] rounded-3xl transition-all duration-300 shadow-[0_4px_20px_rgba(232,245,238,0.7)] border border-emerald-100/60" id="card-riau" style="background: linear-gradient(145deg, rgb(232, 245, 238) 0%, rgb(240, 250, 245) 50%, rgb(230, 247, 250) 100%); box-shadow: rgba(43, 122, 81, 0.16) 0px 8px 24px -4px;">
+<div class="flex items-start justify-between gap-3 mb-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-2xl bg-white text-[#2B7A51] flex items-center justify-center font-extrabold text-[16px] flex-shrink-0 shadow-sm">
+            2
+          </div>
+<div class="flex flex-col min-w-0">
+<h3 class="text-[16px] font-bold text-neutral-900 truncate">D'Beauty Bar Riau Aesthetic</h3>
+<p class="text-[12px] text-neutral-600 truncate mt-0.5">Jl. L. L. R.E. Martadinata No. 88, Cihapit</p>
+</div>
+</div>
+<div class="flex items-center gap-1 px-3 py-1 rounded-full bg-white text-neutral-900 text-[12px] font-extrabold shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[13px] text-[#2B7A51]">directions_car</span>
+<span>2.1 km</span>
+</div>
+</div>
+<div class="flex items-center gap-4 py-2 px-3.5 bg-white/70 backdrop-blur-sm rounded-2xl mb-4 text-[12px] text-neutral-700 font-medium">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-[#2B7A51]">schedule</span>
+<span>09:00 - 21:00 WIB</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-neutral-300"></div>
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[15px] text-[#2B7A51]">call</span>
+<span>022-7208890</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex-1 h-11 flex items-center justify-center gap-1.5 rounded-full bg-white text-neutral-900 font-bold text-[13px] shadow-sm hover:bg-neutral-50 active:scale-95 transition-all" onclick="focusOutlet('riau')">
+<span class="material-symbols-outlined text-[16px]">explore</span>
+<span>Fokus Peta</span>
+</button>
+<button class="flex-1 h-11 flex items-center justify-center gap-1 rounded-full bg-[#18181B] text-white font-bold text-[13px] shadow-[0_4px_12px_rgba(24,24,27,0.2)] hover:bg-neutral-800 active:scale-95 transition-all" onclick="selectOutlet('Beauty Bar Riau Aesthetic')">
+<span>Pilih Cabang</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- CARD 3: Braga Heritage (Pastel Cream / Butter Yellow) -->
+<div class="outlet-card flex flex-col p-5 bg-[#FEF8E7] rounded-3xl transition-all duration-300 shadow-[0_4px_20px_rgba(254,248,231,0.8)] border border-amber-100/60" id="card-braga" style="background: linear-gradient(145deg, rgb(254, 248, 231) 0%, rgb(255, 253, 242) 55%, rgb(253, 234, 235) 100%); box-shadow: rgba(150, 108, 15, 0.16) 0px 8px 24px -4px;">
+<div class="flex items-start justify-between gap-3 mb-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-2xl bg-white text-[#966C0F] flex items-center justify-center font-extrabold text-[16px] flex-shrink-0 shadow-sm">
+            3
+          </div>
+<div class="flex flex-col min-w-0">
+<h3 class="text-[16px] font-bold text-neutral-900 truncate">D'Beauty Bar Braga Heritage</h3>
+<p class="text-[12px] text-neutral-600 truncate mt-0.5">Jl. Braga No. 45, Sumur Bandung</p>
+</div>
+</div>
+<div class="flex items-center gap-1 px-3 py-1 rounded-full bg-white text-neutral-900 text-[12px] font-extrabold shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[13px] text-[#966C0F]">directions_car</span>
+<span>3.6 km</span>
+</div>
+</div>
+<div class="flex items-center gap-4 py-2 px-3.5 bg-white/70 backdrop-blur-sm rounded-2xl mb-4 text-[12px] text-neutral-700 font-medium">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-[#966C0F]">schedule</span>
+<span>10:00 - 21:00 WIB</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-neutral-300"></div>
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[15px] text-[#966C0F]">call</span>
+<span>022-4231122</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex-1 h-11 flex items-center justify-center gap-1.5 rounded-full bg-white text-neutral-900 font-bold text-[13px] shadow-sm hover:bg-neutral-50 active:scale-95 transition-all" onclick="focusOutlet('braga')">
+<span class="material-symbols-outlined text-[16px]">explore</span>
+<span>Fokus Peta</span>
+</button>
+<button class="flex-1 h-11 flex items-center justify-center gap-1 rounded-full bg-[#18181B] text-white font-bold text-[13px] shadow-[0_4px_12px_rgba(24,24,27,0.2)] hover:bg-neutral-800 active:scale-95 transition-all" onclick="selectOutlet('Beauty Bar Braga Heritage')">
+<span>Pilih Cabang</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- CARD 4: Setiabudi Hills (Pastel Blush Pink) -->
+<div class="outlet-card flex flex-col p-5 bg-[#FDEAEB] rounded-3xl transition-all duration-300 shadow-[0_4px_20px_rgba(253,234,235,0.7)] border border-rose-100/60" id="card-setiabudi" style="background: linear-gradient(145deg, rgb(253, 234, 235) 0%, rgb(255, 242, 244) 50%, rgb(254, 248, 231) 100%); box-shadow: rgba(222, 75, 96, 0.16) 0px 8px 24px -4px;">
+<div class="flex items-start justify-between gap-3 mb-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-2xl bg-white text-[#DE4B60] flex items-center justify-center font-extrabold text-[16px] flex-shrink-0 shadow-sm">
+            4
+          </div>
+<div class="flex flex-col min-w-0">
+<h3 class="text-[16px] font-bold text-neutral-900 truncate">D'Beauty Bar Setiabudi</h3>
+<p class="text-[12px] text-neutral-600 truncate mt-0.5">Jl. Dr. Setiabudi No. 64, Sukasari</p>
+</div>
+</div>
+<div class="flex items-center gap-1 px-3 py-1 rounded-full bg-white text-neutral-900 text-[12px] font-extrabold shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[13px] text-[#DE4B60]">directions_car</span>
+<span>4.2 km</span>
+</div>
+</div>
+<div class="flex items-center gap-4 py-2 px-3.5 bg-white/70 backdrop-blur-sm rounded-2xl mb-4 text-[12px] text-neutral-700 font-medium">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-[#DE4B60]">schedule</span>
+<span>09:00 - 20:00 WIB</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-neutral-300"></div>
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[15px] text-[#DE4B60]">call</span>
+<span>022-2035544</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex-1 h-11 flex items-center justify-center gap-1.5 rounded-full bg-white text-neutral-900 font-bold text-[13px] shadow-sm hover:bg-neutral-50 active:scale-95 transition-all" onclick="focusOutlet('setiabudi')">
+<span class="material-symbols-outlined text-[16px]">explore</span>
+<span>Fokus Peta</span>
+</button>
+<button class="flex-1 h-11 flex items-center justify-center gap-1 rounded-full bg-[#18181B] text-white font-bold text-[13px] shadow-[0_4px_12px_rgba(24,24,27,0.2)] hover:bg-neutral-800 active:scale-95 transition-all" onclick="selectOutlet('Beauty Bar Setiabudi Hills')">
+<span>Pilih Cabang</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- CARD 5: Buah Batu (Pastel Mint Green) -->
+<div class="outlet-card flex flex-col p-5 bg-[#E8F5EE] rounded-3xl transition-all duration-300 shadow-[0_4px_20px_rgba(232,245,238,0.7)] border border-emerald-100/60" id="card-buahbatu" style="background: linear-gradient(145deg, rgb(232, 245, 238) 0%, rgb(241, 250, 245) 50%, rgb(232, 242, 250) 100%); box-shadow: rgba(43, 122, 81, 0.16) 0px 8px 24px -4px;">
+<div class="flex items-start justify-between gap-3 mb-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-2xl bg-white text-[#2B7A51] flex items-center justify-center font-extrabold text-[16px] flex-shrink-0 shadow-sm">
+            5
+          </div>
+<div class="flex flex-col min-w-0">
+<h3 class="text-[16px] font-bold text-neutral-900 truncate">D'Beauty Bar Buah Batu</h3>
+<p class="text-[12px] text-neutral-600 truncate mt-0.5">Jl. Buah Batu No. 188, Lengkong</p>
+</div>
+</div>
+<div class="flex items-center gap-1 px-3 py-1 rounded-full bg-white text-neutral-900 text-[12px] font-extrabold shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[13px] text-[#2B7A51]">directions_car</span>
+<span>5.8 km</span>
+</div>
+</div>
+<div class="flex items-center gap-4 py-2 px-3.5 bg-white/70 backdrop-blur-sm rounded-2xl mb-4 text-[12px] text-neutral-700 font-medium">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-[#2B7A51]">schedule</span>
+<span>09:00 - 20:00 WIB</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-neutral-300"></div>
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[15px] text-[#2B7A51]">call</span>
+<span>022-7309988</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex-1 h-11 flex items-center justify-center gap-1.5 rounded-full bg-white text-neutral-900 font-bold text-[13px] shadow-sm hover:bg-neutral-50 active:scale-95 transition-all" onclick="focusOutlet('buahbatu')">
+<span class="material-symbols-outlined text-[16px]">explore</span>
+<span>Fokus Peta</span>
+</button>
+<button class="flex-1 h-11 flex items-center justify-center gap-1 rounded-full bg-[#18181B] text-white font-bold text-[13px] shadow-[0_4px_12px_rgba(24,24,27,0.2)] hover:bg-neutral-800 active:scale-95 transition-all" onclick="selectOutlet('Beauty Bar Buah Batu')">
+<span>Pilih Cabang</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Toast Feedback on Action -->
+<div class="fixed bottom-28 left-1/2 -translate-x-1/2 z-50 px-4 py-2 rounded-full bg-[#18181B] text-white shadow-2xl flex items-center gap-2 opacity-0 pointer-events-none transition-all duration-300 scale-95" id="selectionToast">
+<span class="material-symbols-outlined text-[18px] text-emerald-400">check_circle</span>
+<span class="text-[12px] font-bold" id="toastMessage">Cabang berhasil dipilih</span>
+</div>
+</div>
+</main><!-- Floating Bold Charcoal "Reservasi" Button (Above Navigation Dock) -->
+<div class="fixed bottom-24 right-5 z-40">
+<a class="flex items-center gap-2 h-12 px-5 rounded-full bg-[#18181B] text-white shadow-[0_8px_25px_rgba(24,24,27,0.35)] hover:bg-neutral-800 active:scale-95 transition-all" data-path="quick-booking" href="#" style="background: linear-gradient(135deg, rgb(24, 24, 27) 0%, rgb(45, 39, 41) 60%, rgb(59, 36, 43) 100%); border: 1px solid rgba(253, 234, 235, 0.2); box-shadow: rgba(24, 24, 27, 0.35) 0px 8px 25px, rgba(224, 82, 99, 0.2) 0px 0px 15px;">
+<span class="material-symbols-outlined text-[19px] text-[#FDEAEB]">calendar_add_on</span>
+<span class="text-[13px] font-bold tracking-wide">Reservasi</span>
+</a>
+</div><!-- Floating Pill Dock Navigation Capsule (Inspired by Reference IMAGE_3) -->
+<nav class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-[390px] h-16 rounded-full bg-white/95 backdrop-blur-xl shadow-[0_12px_35px_rgba(0,0,0,0.12)] border border-black/[0.04] px-3 flex items-center justify-between"><a class="flex items-center justify-center w-11 h-11 rounded-full text-neutral-400 hover:text-neutral-800 transition-colors" data-path="beranda" href="#" title="Beranda">
+<span class="material-symbols-outlined text-[22px]">home</span>
+</a>
+<a class="flex items-center justify-center w-11 h-11 rounded-full text-neutral-400 hover:text-neutral-800 transition-colors" data-path="layanan" href="#" title="Layanan">
+<span class="material-symbols-outlined text-[22px]">search</span>
+</a>
+<!-- Active Center Charcoal Pill for Current Outlet Screen -->
+<a aria-current="page" class="flex items-center justify-center w-12 h-12 rounded-full bg-[#18181B] text-white shadow-[0_4px_14px_rgba(24,24,27,0.3)] transition-transform active:scale-95" data-path="outlet-&amp;-peta" href="#" title="Outlet &amp; Peta">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+</a>
+<a class="flex items-center justify-center w-11 h-11 rounded-full text-neutral-400 hover:text-neutral-800 transition-colors" data-path="booking-saya" href="#" title="Booking Saya">
+<span class="material-symbols-outlined text-[22px]">calendar_today</span>
+</a>
+<a class="flex items-center justify-center w-11 h-11 rounded-full text-neutral-400 hover:text-neutral-800 transition-colors" data-path="profil" href="#" title="Profil">
+<span class="material-symbols-outlined text-[22px]">favorite</span>
+</a>
+</nav></div><script>
+  // GPS Refresh Micro-interaction
+  const refreshBtn = document.getElementById('refreshGpsBtn');
+  const refreshIcon = document.getElementById('refreshIcon');
+  const userMarker = document.getElementById('userMarker');
+
+  refreshBtn.addEventListener('click', () => {
+    refreshIcon.classList.add('rotate-[360deg]');
+    showToast('Posisi GPS diperbarui: Jl. Dipati Ukur No. 35');
+    
+    if (userMarker) {
+      userMarker.classList.add('scale-125');
+      setTimeout(() => {
+        userMarker.classList.remove('scale-125');
+      }, 400);
+    }
+
+    setTimeout(() => {
+      refreshIcon.classList.remove('rotate-[360deg]');
+    }, 700);
+  });
+
+  // Focus on Outlet Pin & Card Highlight
+  function focusOutlet(outletId) {
+    document.querySelectorAll('.outlet-pin').forEach(pin => {
+      pin.classList.remove('scale-125', 'z-30');
+      pin.classList.add('z-20');
+    });
+
+    const pin = document.getElementById(`pin-${outletId}`);
+    if (pin) {
+      pin.classList.add('scale-125', 'z-30');
+      setTimeout(() => {
+        pin.classList.remove('scale-125');
+      }, 1500);
+    }
+
+    const card = document.getElementById(`card-${outletId}`);
+    if (card) {
+      card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      card.classList.add('ring-2', 'ring-neutral-900');
+      setTimeout(() => {
+        card.classList.remove('ring-2', 'ring-neutral-900');
+      }, 1200);
+    }
+  }
+
+  function recenterUser() {
+    if (userMarker) {
+      userMarker.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      showToast('Berpusat di lokasi kamu (Coblong)');
+    }
+  }
+
+  function zoomMap(factor) {
+    showToast(factor > 1 ? 'Memperbesar peta...' : 'Memperkecil peta...');
+  }
+
+  function selectOutlet(name) {
+    showToast(`${name} dipilih untuk reservasi ✨`);
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('selectionToast');
+    const toastMsg = document.getElementById('toastMessage');
+    if (!toast || !toastMsg) return;
+
+    toastMsg.textContent = message;
+    toast.classList.remove('opacity-0', 'pointer-events-none', 'scale-95');
+    toast.classList.add('opacity-100', 'scale-100');
+
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'pointer-events-none', 'scale-95');
+      toast.classList.remove('opacity-100', 'scale-100');
+    }, 2400);
+  }
+</script>
+
+</body></html>
