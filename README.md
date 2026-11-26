@@ -1,4 +1,4 @@
-# 💅 D-Beauty Bar Apps
+# 💅 D-Beauty Bar Apps 💅
 
 Aplikasi mobile modern untuk layanan reservasi dan katalog perawatan kecantikan (*beauty bar*). Dibangun menggunakan **Flutter** untuk memberikan pengalaman pemesanan layanan kecantikan yang cepat, praktis, dan estetis.
 
